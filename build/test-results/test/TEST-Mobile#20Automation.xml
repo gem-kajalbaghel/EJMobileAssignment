@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Mobile Automation" tests="2" skipped="0" failures="1" errors="0" timestamp="2022-11-28T07:44:39" hostname="GEMPK-200035" time="77.687">
+  <properties/>
+  <testcase name="Verify mobile application launched successfully" classname="Mobile Automation" time="16.446"/>
+  <testcase name="Perfecto Expense Tracker Login" classname="Mobile Automation" time="61.239">
+    <failure message="org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'GEMPK-200035', ip: '10.60.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [0aecb8a5-47bd-4c5a-ae15-685ff999066b, sendKeysToElement {id=00000000-0000-009b-ffff-ffff00000038, value=[Ljava.lang.CharSequence;@58f437b0}]&#10;Capabilities {appium:app: C:\Users\ja.multani\IdeaPro..., appium:appPackage: io.perfecto.expense.tracker, appium:databaseEnabled: false, appium:desired: {app: C:\Users\ja.multani\IdeaPro..., deviceName: Pixel 3, platformName: android, platformVersion: 10.0}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 10, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: android}&#10;Element: [[AndroidDriver:  on android (0aecb8a5-47bd-4c5a-ae15-685ff999066b)] -&gt; xpath: //android.widget.EditText[@resource-id='io.perfecto.expense.tracker:id/signup_password']]&#10;Session ID: 0aecb8a5-47bd-4c5a-ae15-685ff999066b" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'GEMPK-200035', ip: '10.60.1.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0aecb8a5-47bd-4c5a-ae15-685ff999066b, sendKeysToElement {id=00000000-0000-009b-ffff-ffff00000038, value=[Ljava.lang.CharSequence;@58f437b0}]
+Capabilities {appium:app: C:\Users\ja.multani\IdeaPro..., appium:appPackage: io.perfecto.expense.tracker, appium:databaseEnabled: false, appium:desired: {app: C:\Users\ja.multani\IdeaPro..., deviceName: Pixel 3, platformName: android, platformVersion: 10.0}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 10, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: android}
+Element: [[AndroidDriver:  on android (0aecb8a5-47bd-4c5a-ae15-685ff999066b)] -&gt; xpath: //android.widget.EditText[@resource-id='io.perfecto.expense.tracker:id/signup_password']]
+Session ID: 0aecb8a5-47bd-4c5a-ae15-685ff999066b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:733)
+	at net.serenitybdd.core.pages.PageObject.typeInto(PageObject.java:617)
+	at com.gemini.mobile.stepdefinition.PerfectoExpensesSteps.enterPasswordInField(PerfectoExpensesSteps.java:108)
+	at ✽.Enter password in &quot;password&quot; field(file:///C:/Users/ja.multani/IdeaProjects/MobileAutomation/src/test/resources/features/PerfectoExpenses.feature:18)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
